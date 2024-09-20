@@ -26,6 +26,10 @@ html {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*======== BREAKPOINTS ========*/
 @media (max-width: 1536px) {
 }

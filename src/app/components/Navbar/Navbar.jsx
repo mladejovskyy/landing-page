@@ -1,5 +1,6 @@
 import './Navbar.css';
 import {useState, useEffect} from 'react';
+import Link from "next/link";
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -53,9 +54,11 @@ export default function Navbar() {
                         data-aos-delay="300"><span>Časté dotazy</span>
                     </li>
                     <li data-aos="fade-down" data-aos-once="true" data-aos-delay="500">
-                        <button  className="btn btn-secondary">Konzultace
-                            zdarma
-                        </button>
+                        <Link href="tel:723709079">
+                            <button  className="btn btn-secondary">Konzultace
+                                zdarma
+                            </button>
+                        </Link>
                     </li>
                 </ul>
             </nav>

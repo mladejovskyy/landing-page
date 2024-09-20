@@ -84,3 +84,76 @@ main {
     bottom: -53vh;
     left: -9vw;
 }
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero .row {
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    .pattern.lines {
+        position: absolute;
+        bottom: -65vh;
+        left: -18vw;
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        overflow-y: auto;
+    }
+
+    main {
+        padding-top: 6rem;
+    }
+
+    .hero .row {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .hero .item.right {
+        justify-content: center;
+    }
+
+    .hero .item.right img {
+        width: 55%;
+    }
+
+    .pattern.lines {
+        position: absolute;
+        bottom: 15vh;
+        right: -30vw;
+        left: auto;
+        opacity: 0.7;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .item.right img {
+        width: 85%;
+    }
+
+    .pattern {
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 475px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .btns-row {
+        flex-direction: column;
+    }
+
+    .hero .btns-row button {
+        width: 100%;
+    }
+}

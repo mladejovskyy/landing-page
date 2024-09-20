@@ -5,6 +5,7 @@ import "./globals.css";
 import "./style.css";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
+import Link from "next/link";
 
 function App() {
   useEffect(() => {
@@ -26,22 +27,25 @@ function App() {
                     si konzultaci zdarma.
                   </p>
                   <div className="btns-row">
-                    <div
+                    <Link
+                        href={'tel:723709079'}
                         data-aos="fade-right"
                         data-aos-once="true"
                         data-aos-delay="0">
                       <button className="btn btn-secondary">
                         Konzultace zdarma
                       </button>
-                    </div>
-                    <div
+                    </Link>
+                    <Link
+                        href={'https://www.github.com/mladejovskyy'}
+                        target={'_blank'}
                         data-aos="fade-right"
                         data-aos-once="true"
                         data-aos-delay="150">
                       <button className="btn">
                         Moje práce -&gt;
                       </button>
-                    </div>
+                    </Link>
                   </div>
                   <div className="reviews-row">
                     <img src="/images/reviews-photo.webp" className="people" alt="" draggable={false} loading="eager"/>
