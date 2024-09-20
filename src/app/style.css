@@ -1,0 +1,86 @@
+body {
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*======== Hero ========*/
+main {
+    padding-top: 10rem;
+    position: relative;
+}
+
+.hero .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.hero .item.left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.hero .item.left p.hero-p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 24px;
+}
+
+.hero .btns-row {
+    margin-top: 48px;
+    display: flex;
+    gap: 24px;
+}
+
+.hero .reviews-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 72px;
+}
+
+.hero .reviews-row img.people {
+    max-height: 55px;
+}
+
+.hero .reviews-row p span {
+    font-weight: 600;
+}
+
+.hero .item.right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero .item.right img {
+    width: 85%;
+}
+
+.pattern.left-dots {
+    position: absolute;
+    top: 10vh;
+    left: 5px;
+}
+
+.pattern.right-dots {
+    position: absolute;
+    top: 20vh;
+    right: 30px;
+}
+
+.pattern.lines {
+    position: absolute;
+    bottom: -53vh;
+    left: -9vw;
+}

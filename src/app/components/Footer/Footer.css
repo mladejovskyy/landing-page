@@ -1,0 +1,89 @@
+footer {
+    background-color: #fff;
+}
+
+footer .row:first-of-type {
+    padding: 54px 0 36px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .row:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer img.logo {
+    height: 34px;
+    cursor: pointer;
+}
+
+footer p.slogan {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+footer p.ico {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+footer .item.right {
+    margin: auto 0;
+}
+
+footer .item.right h3.sm-show {
+    display: none;
+}
+
+footer .item.right ul {
+    display: flex;
+    gap: 36px;
+}
+
+footer .item.right ul li {
+    color: #131313;
+    cursor: pointer;
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+}
+
+footer .item.right ul li:hover {
+    color: #6553c9;
+}
+
+footer .author span {
+    color: #6553c9;
+    font-weight: 600;
+}
+
+@media (max-width: 1280px) {
+    footer .row {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    footer .item.right h3.sm-show {
+        display: initial;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .row .item.right ul {
+        flex-direction: column;
+        margin-top: 12px;
+        gap: 22px;
+    }
+
+    footer .item.right h3.sm-show {
+        display: initial;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
