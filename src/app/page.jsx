@@ -56,7 +56,7 @@ function App() {
                   </div>
                 </div>
                 <div className="item right">
-                  <img src="/images/hero-photo2.webp" alt="" draggable={false} loading="eager"/>
+                  <img src="/images/hero-photo.webp" alt="" draggable={false} loading="eager"/>
                 </div>
               </div>
             </div>

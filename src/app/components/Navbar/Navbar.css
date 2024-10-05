@@ -41,12 +41,12 @@ nav ul li {
     color: #fff;
 }
 
-nav ul li span {
-    transition: color 0.15s ease-in-out;
+nav ul li .link svg path {
+    transition: fill 0.15s ease-in-out;
 }
 
-nav ul li span:hover {
-    color: #E6C200;
+nav ul li .link:hover svg path {
+    fill: #E6C200 !important;
 }
 
 /* Burger menu styles for small screens */
