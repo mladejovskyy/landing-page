@@ -1,10 +1,12 @@
 import './Navbar.css';
 import {useState, useEffect} from 'react';
 import Link from "next/link";
+import {useRouter} from 'next/navigation';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const router = useRouter();
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -23,11 +25,36 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const scrollToTarget = async (sectionId) => {
+        const currentPath = window.location.pathname;
+        if (currentPath === '/') {
+            // On homepage, directly scroll to the target section
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({behavior: 'smooth'});
+            }
+        } else {
+            // Redirect to the homepage and then scroll
+            await router.push('/');
+
+            // Ensure scrolling happens after page navigation
+            setTimeout(() => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({behavior: 'smooth'});
+                }
+            }, 100); // Short delay to ensure page redirection is processed
+        }
+
+        // Close the menu on mobile after clicking
+        setMenuOpen(false);
+    };
 
     return (
         <div className={`nav ${scrolled ? 'scrolled' : ''}`}>
             <nav className="container">
                 <img
+                    onClick={() => scrollToTarget('hero')}
                     className="nav-logo"
                     src="/images/nav-logo.svg"
                     alt="Logo mladejovsky"
@@ -93,7 +120,7 @@ export default function Navbar() {
                     </li>
                     <li data-aos="fade-down" data-aos-once="true" data-aos-delay="300">
                         <Link href="tel:723709079">
-                            <button  className="btn btn-secondary">Konzultace
+                            <button  className="btn btn-primary">Konzultace
                                 zdarma
                             </button>
                         </Link>

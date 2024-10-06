@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  background-color: #6553c9;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -28,6 +28,10 @@ html {
 
 a {
   text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 /*======== BREAKPOINTS ========*/
@@ -81,8 +85,8 @@ a {
 /*======== Headings ========*/
 h1 {
   font-size: 54px;
-  font-weight: 600;
-  color: #fff;
+  font-weight: 700;
+  color: #131313;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -112,7 +116,7 @@ h5 {
 }
 
 p {
-  color: #fff;
+  color: #333333;
 }
 
 @media (max-width: 1536px) {
@@ -184,7 +188,7 @@ p {
   border-radius: 5px;
   transition: all 0.2s;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   background-color: transparent;
   border: none;

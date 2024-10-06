@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    background-color: #6553c9;
+    background-color: #fff;
 }
 
 /* Background color change on scroll */
@@ -45,8 +45,12 @@ nav ul li .link svg path {
     transition: fill 0.15s ease-in-out;
 }
 
+nav ul li .link svg path {
+    fill: #222 !important;
+}
+
 nav ul li .link:hover svg path {
-    fill: #E6C200 !important;
+    fill: #6553c9 !important;
 }
 
 /* Burger menu styles for small screens */

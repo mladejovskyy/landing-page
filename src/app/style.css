@@ -27,19 +27,19 @@ main {
 .hero .item.left {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 11%;
 }
 
 .hero .item.left p.hero-p {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.95);
+    color: #333333;
     margin-top: 24px;
 }
 
 .hero .btns-row {
     margin-top: 48px;
     display: flex;
-    gap: 24px;
+    gap: 12px;
 }
 
 .hero .reviews-row {
@@ -83,6 +83,15 @@ main {
     position: absolute;
     bottom: -53vh;
     left: -9vw;
+}
+
+@media (max-width: 1536px) {
+    .pattern.lines {
+        position: absolute;
+        bottom: -63vh;
+        left: -18vw;
+        opacity: 0.7;
+    }
 }
 
 @media (max-width: 1280px) {

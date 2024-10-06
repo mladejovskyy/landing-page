@@ -32,7 +32,7 @@ function App() {
                         data-aos="fade-right"
                         data-aos-once="true"
                         data-aos-delay="0">
-                      <button className="btn btn-secondary">
+                      <button className="btn btn-primary">
                         Konzultace zdarma
                       </button>
                     </Link>

@@ -27,7 +27,7 @@ export default function ErrorPage() {
               smazána.
             </h3>
             <Link href="../">
-              <button className="btn btn-secondary">Vrátit se zpět</button>
+              <button className="btn btn-primary">Vrátit se zpět</button>
             </Link>
           </div>
         </section>

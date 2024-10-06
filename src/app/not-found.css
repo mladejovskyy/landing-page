@@ -1,11 +1,10 @@
 body {
   min-height: 100vh;
+    overflow-y:auto;
 }
 
 .not-found {
-  background-color: #6553c9;
-  min-height: 65.7vh;
-  padding-top: 10vh;
+  min-height: 50vh;
   display: grid;
   align-items: center;
 }
@@ -21,6 +20,7 @@ body {
 }
 
 .not-found h3 {
-  color: #fff;
+  color: #222;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
