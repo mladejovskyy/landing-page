@@ -27,7 +27,7 @@ main {
 .hero .item.left {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .hero .item.left p.hero-p {
@@ -114,6 +114,10 @@ main {
     .hero .row {
         grid-template-columns: 1fr;
         gap: 60px;
+    }
+
+    .hero .item.left {
+        margin-top: 7%;
     }
 
     .hero .item.right {
